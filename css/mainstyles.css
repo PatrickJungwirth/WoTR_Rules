@@ -233,17 +233,18 @@ p{
 
 .subhead{
     /* h3 */
-    width: max-content;
+    width: fit-content;
+    /* box-sizing: content-box; */
     padding: 0.125em 0.5em 0.5em;
     color: white;
     font-size: var(--fs-15);
     line-height: .9;
-    border: 2px solid rgb(240, 176, 56);
-    background-color: var(--clr-main);
+    border: 2px solid rgb(170, 165, 155);
+    background-color: var(--clr-test-04);
     border-radius: 0px 10px 10px 0px;
-    text-align: center;
+    /* text-align: center; */
     color: white;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 /* ################################################################################
@@ -312,16 +313,17 @@ p{
 
 .list-highlighted{
     color: black;
-    margin: 0.5rem 0;
+    margin: 0.5rem 0 1.5rem;
     list-style-position: inside;
     padding: 0;
     max-width: 90%; 
-    /* background-color: var(--clr-highlight); */
+    background-color: white;
+    border-radius: 6px;
 }
 
 .list-highlighted_item{
     background-color:antiquewhite;
-    border-radius: 3px;
+    border-radius: 6px;
     margin-bottom: 0.5em;
     list-style-type: disc;
     /* padding: calc(0.5*var(--pad)) 0 calc(0.5*var(--pad)) calc(0.5*var(--pad)); */
@@ -340,7 +342,7 @@ p{
 }
 
 .list-highlighted_subitem{
-    background-color: var(--clr-test-04);
+    background-color: rgb(199, 204, 214);
     /* border: 1px dashed rgba(39, 27, 27, 0.5); */
     border-radius: 3px;
     margin-bottom: 0.5em;

@@ -157,7 +157,9 @@ p{
     padding: 0 0 0 1rem;
     flex: 1 1 0;
     width: 40%;
-    font-size: 2rem;
+    font-size: var(--fs-50);
+    text-align: left;
+    line-height: 0.9;
 }
 
 @media (min-width: 600px){
@@ -199,9 +201,9 @@ p{
     width: var(--wrapper-width);
     margin: 1rem auto;
     box-sizing: content-box;
-    padding: 2.5%;
+    padding: .5em 2.5%;
     color: black;
-    background-color: antiquewhite;
+    background-color: rgb(248, 250, 220);
     border-radius: 4px;
 }
 
@@ -317,12 +319,12 @@ p{
     list-style-position: inside;
     padding: 0;
     max-width: 90%; 
-    background-color: white;
+    background-color: antiquewhite;
     border-radius: 6px;
 }
 
 .list-highlighted_item{
-    background-color:antiquewhite;
+    /* background-color:antiquewhite; */
     border-radius: 6px;
     margin-bottom: 0.5em;
     list-style-type: disc;
@@ -341,22 +343,28 @@ p{
     line-height: 1; */
 }
 
+
 .list-highlighted_subitem{
     background-color: rgb(199, 204, 214);
+    color: black;
     /* border: 1px dashed rgba(39, 27, 27, 0.5); */
     border-radius: 3px;
     margin-bottom: 0.5em;
-    list-style-type: circle;
+    list-style-type: disc;
     padding: calc(0.5*var(--pad)) calc(0.5*var(--pad)) calc(0.5*var(--pad));
     text-underline-position: below;
     padding-left: 1.25rem;
     text-indent: -1rem;
 }
 
+.list-highlighted_subitem::marker{
+    color:hsl(234, 12%, 34%);
+}
+
 
 .list-monochrome{
     margin: 0.5rem 0;
-    color: black;
+    color: white;
     list-style-position: inside;
     /* padding: 0rem 1rem; */
     max-width: 90%; 
@@ -364,7 +372,7 @@ p{
 }
 
 .list-monochrome_item{
-    background-color: var(--clr-test-04);
+    /* background-color: var(--clr-test-04); */
     border-radius: 3px;
     margin-bottom: 0.5em;
     padding-right: 0.5rem;
@@ -375,6 +383,26 @@ p{
     text-indent: -1rem;
 }
 
+.list-monochrome_item > ul{
+    margin-top: .75rem;
+    background-color: rgba(93, 101, 116, 0.5);
+    color: white;
+    font-style: italic;
+    /* border: 1px dashed rgba(39, 27, 27, 0.5); */
+    border-left: 4px black solid;
+    border-radius: 3px;
+    list-style-type: none;
+    list-style-position: outside;
+    padding: calc(0.5*var(--pad)) calc(0.5*var(--pad)) calc(0.5*var(--pad));
+    /* text-underline-position: below; */
+    /* padding-left: 1.25rem; */
+    text-indent: 0;
+    /* important: resets the text-indent */
+}
+
+.list-monochrome_sublist > li + li{
+    margin-top: .5rem;
+}
 
 .ordered-list{
     margin: 1rem;

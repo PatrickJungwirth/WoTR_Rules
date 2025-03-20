@@ -1,11 +1,8 @@
-// console.log("Im connected");
+console.log("Im connected");
 document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".clickable").forEach(item => {
-        item.addEventListener("click", function () {
-            let sublist = this.querySelector(".sublist");
-            if (sublist) {
-                sublist.classList.toggle("expanded");
-            }
-        });
-    });
+    document.querySelector('.example-clickable').addEventListener('click', function() {
+        var img = this.querySelector('.list_img-example');
+        img.style.display = img.style.display === 'block' ? 'none' : 'block';
+      });
 });
+

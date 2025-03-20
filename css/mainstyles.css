@@ -124,9 +124,9 @@ p{
     margin: auto;
 }
 
-.player{
+/* .player{
 
-}
+} */
 
 .card_title-area{
     --size-element: 2.5rem;
@@ -271,9 +271,9 @@ p{
     margin-bottom: 0.75rem;
 }
 
-.text-white{
+/* .text-white{
 
-}
+} */
 
 .box-highlighted{
     background-color: var(--clr-test-04);
@@ -378,6 +378,16 @@ p{
 
 .ordered-list{
     margin: 1rem;
+}
+
+.list_img-example{
+        display: none;
+        width: 60%; /* Optional: adjust size */
+        height: auto;
+}
+
+.example-clickable{
+    cursor: pointer;
 }
 
 /* ################################################################################
